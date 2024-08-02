@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Products from './pages/Products'
 import Cart from './pages/Cart'
-import Navbar from './components/NavBar';
 import Header from './components/Header';
 
 const App: React.FC = () => {
