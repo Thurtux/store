@@ -1,11 +1,11 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
-import '../css/Products.css';
+import '../css/ProductList..css';
 
 const products = [
   {
     id: 1,
-    image: 'path/to/image1.jpg',
+    image: 'https://acdn.mitiendanube.com/stores/002/912/130/products/moletom-frente-3ff8825aa1946eb34a17111401226876-640-0.webp',
     name: 'Product 1',
     price: '$10.00',
   },
@@ -21,25 +21,12 @@ const products = [
     name: 'Product 3',
     price: '$30.00',
   },
-  {
-    id: 4,
-    image: 'path/to/image4.jpg',
-    name: 'Product 4',
-    price: '$40.00',
-  },
-  {
-    id: 5,
-    image: 'path/to/image5.jpg',
-    name: 'Product 5',
-    price: '$50.00',
-  },
-  // Adicione mais produtos conforme necessário
 ];
 
-const ProductListPage: React.FC = () => {
+const Products: React.FC = () => {
   return (
-    <div className="product-list-page">
-      <h1>Lista de Produtos</h1>
+    <div className="products-page">
+      <h1>Produtos</h1>
       <div className="products-grid">
         {products.map((product) => (
           <ProductCard
@@ -55,4 +42,4 @@ const ProductListPage: React.FC = () => {
   );
 };
 
-export default ProductListPage;
+export default Products;

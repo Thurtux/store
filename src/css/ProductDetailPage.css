@@ -1,0 +1,32 @@
+.product-detail-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .product-detail-page img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-detail-page h1 {
+    margin: 1rem 0;
+  }
+  
+  .product-detail-page p {
+    margin: 0.5rem 0;
+  }
+  
+  .product-detail-page button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .product-detail-page button:hover {
+    background-color: #0056b3;
+  }
+  

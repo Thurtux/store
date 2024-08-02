@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/ProductCard.css';
 
 interface ProductCardProps {
+  id: number;
   image: string;
   name: string;
   price: string;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ image, name, price }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ id, image, name, price }) => {
   return (
     <div className="product-card">
-      <img src={image} alt={name} className="product-image" />
-      <div className="product-info">
-        <h3>{name}</h3>
+      <Link to={`/product/${id}`}>
+        <img src={image} alt={name} />
+        <h2>{name}</h2>
         <p>{price}</p>
-      </div>
+      </Link>
     </div>
   );
 };
