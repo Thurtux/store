@@ -11,7 +11,7 @@ body, ul {
     align-items: center;
     padding: 1rem;
     background-color: #ffffff;
-    color: #fff;
+    color: #dddddd;
   }
   
   .navbar-title {
@@ -43,7 +43,7 @@ body, ul {
   }
   
   .nav-links a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
   }
